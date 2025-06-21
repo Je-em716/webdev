@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px; /* ✅ fixed unit */
+  padding: 0 80px;
+  margin: auto;
+  font-family: 'Monserrat', sans-serif;
+}
+
+/* NAVIGATION */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background: #1a1a1a;
+  z-index: 1;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-family: "Monoton", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #00bfff;
+}
+.navbar .logo a:hover {
+  color: aqua;
+}
+.navbar .logo a span {
+  color: #FFD700;
+}
+.navbar .logo a span:hover {
+  color: #FFEB8A;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+  transition: all 0.3s linear;
+}
+.navbar .menu li a:hover {
+  color: aqua;
+}
+
+/* HOME */
+.home {
+  display: flex;
+  background: url("images/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 720px;
+  font-family: "Monserrat", sans-serif;
+  color: red;
+}
+.home .max-width {
+  margin: auto 0 auto 30px;
+}
+.home .home-content .text-1 {
+  font-size: 25px;
+}
+.home .home-content .text-2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.home .home-content .text-3 {
+  font-size: 25px;
+}
+.home .home-content a {
+  display: inline-block;
+  background: red;
+  color: white;
+  font-size: 20px;
+  padding: 12px 36px;
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+}
+.home .home-content a:hover {
+  transform: scale(1.1);
+  background: turquoise;
+}
+
+/* SECTION BASE */
+section {
+  padding: 100px 0;
+}
+
+/* ABOUT */
+.about {
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  background: url("images/banner-5.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.about .title {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.about .about-content .column-right {
+  width: 55%;
+}
+.about .about-content .column-right .text {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.about .about-content .column-right p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* SERVICES */
+.services {
+  background: #66CC00;
+  color: black;
+}
+.services .title {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: 'Monserrat', sans-serif;
+  color: white;
+}
+.services .services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .services-content .card {
+  width: calc(33.333% - 20px);
+  background: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+}
+.services .services-content .card:hover {
+  background: aqua;
+}
+.services .services-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .services-content .card .box:hover {
+  transform: scale(1.05);
+}
+.services .services-content .card img {
+  width: 60px;
+  height: 60px;
+}
+.services .services-content .text {
+  font-size: 25px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* SKILLS */
+.skills {
+  font-family: 'Montserrat', sans-serif;
+  background: url("images/banner-3.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 100px 20px;
+}
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.skills .skills-content .column {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.skills .skills-content .left p {
+  font-size: 18px;
+  text-align: justify;
+}
+.skills .skills-content .left a {
+  display: inline-block;
+  background: red;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.skills .skills-content .left a:hover {
+  transform: scale(1.1);
+  background: turquoise;
+}
+.skills .skills-content .right .bar {
+  margin-bottom: 20px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.skills .skills-content .right span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.skills .skills-content .right .line {
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  background: red;
+}
+.skills .skills-content .right .html::before { width: 95%; }
+.skills .skills-content .right .css::before { width: 90%; }
+.skills .skills-content .right .javascript::before { width: 98%; }
+.skills .skills-content .right .php::before { width: 85%; }
+.skills .skills-content .right .sql::before { width: 85%; }
+
+/* CONTACT */
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  background: url("images/banner-4.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.contact .title,
+.contact-h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px); /* ✅ fixed spacing issue */
+}
+.contact .contact-content .left .talk {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #DC143C;
+}
+.contact .contact-content .left p {
+  font-size: 18px;
+  text-align: justify;
+}
+.contact .contact-content .row {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+.contact .contact-content .row img {
+  width: 20px;
+  height: 20px;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .info .head {
+  color: #DC143C;
+  font-weight: 600;
+}
+.contact .contact-content .info .sub-title {
+  font-weight: 600;
+}
+.contact .right {
+  margin-left: 30px;
+}
+.text1 {
+  color: #DC143C;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.contact .right form .fields {
+  display: flex;
+  gap: 10px;
+}
+.contact .right form .field,
+.contact .right form .fields {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.contact .right form .field input,
+.contact .right form .field textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact .right form .field.textarea textarea {
+  height: 100px;
+  resize: vertical;
+}
+.contact .right form .button button {
+  width: 100%;
+  background: tomato;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact .right form .button button:hover {
+  background: #e03e2d;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact .right form .button button:active {
+  background: #c72b1f;
+  transform: scale(0.98);
+}
+
+/* FOOTER */
+footer {
+  font-family: 'Monserrat', sans-serif;
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 20px 20px;
+}
+footer span {
+  color: red;
+}
+footer span a {
+  color: red;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* ==================== RESPONSIVE ==================== */
+
+
+@media (max-width: 991px) {
+  .menu-btn{
+    display:none;
+    z-index :999px;
+  }
+  .max-width {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 947px) {
+
+    .menu-btn{
+      display:block;
+      z-index :999;
+    }
+  
+  }
+  .navbar .menu{
+    position:fixed;
+    height:80vh;
+    width:100%;
+    left:0;
+    top:0;
+    opacity: 90%;
+    background:black;
+    text-align: center;
+    padding-top:80px;
+  }
+  
+ .navbar  .menu li{
+  display:block;
+ }
+ .navbar .menu li a{
+  display:inline-block;
+  margin:20px;
+ }
+  .skills .skills-content,
+  .contact .contact-content,
+  .about .about-content,
+  .services .services-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column,
+  .about .about-content .left,
+  .about .about-content .column-right,
+  .services .services-content .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about .about-content .left img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn{
+    display:block;
+    z-index :999;
+  }
+  .skills .skills-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  .skills .skills-content .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .skills .skills-content .left .text {
+    font-size: 18px;
+  }
+
+  .skills .skills-content .left p,
+  .skills .skills-content .right span {
+    font-size: 16px;
+  }
+
+  .skills {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-btn{
+    display:block;
+    z-index :999;
+  }
+  .home .home-content .text-1,
+  .home .home-content .text-2,
+  .home .home-content .text-3,
+  .home .home-content a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 28px;
+  }
+
+  .navbar .menu li a {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .services .services-content .text {
+    font-size: 18px;
+  }
+
+  .contact .contact-content .left p,
+  .about .about-content .column-right p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+}
+/* Menu Button Styles */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.menu-btn img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn.active img {
+  transform: rotate(90deg);
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 991px) {
+  .menu-btn {
+      display: block;
+  }
+  
+  .navbar .menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: rgba(26, 26, 26, 0.95);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      z-index: 1000;
+      padding-top: 80px;
+  }
+  
+  .navbar .menu.active {
+      left: 0;
+  }
+  
+  .navbar .menu li {
+      margin: 20px 0;
+  }
+  
+  .navbar .menu li a {
+      font-size: 24px;
+      padding: 10px 20px;
+  }
+  
+  /* Prevent scrolling when menu is open */
+  body.menu-open {
+      overflow: hidden;
+  }
+}
+
+
+
+
